@@ -33,21 +33,21 @@ export default function Home() {
       <main className={styles.main + ' p-5'}>
         {/* - if the width of the screen is less than or equal to 375px, then change the height of the player to be 80px instead of 380px
             - if the screen is wider than 700px, set the width of the player to 700px */}
-        <div className={styles.music}>
+        <section className={styles.music}>
           <iframe style={{ borderRadius: 12 + 'px'}} src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" width="700" height="380" frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </div>
-        <div>
+        </section>
+        <section>
           <h1>Blog Post</h1>
-          <p>width: {width} ~ height: {height}</p>
-        </div>
-        <div>
+          {/* width: {width} ~ height: {height} */}
+        </section>
+        <section>
           <h1>Merchandise</h1>
           <ul>
             <li>item</li>
             <li>item</li>
             <li>item</li>
           </ul>
-        </div>
+        </section>
       </main>
 
       <footer style={{ position: 'relative', }} className={styles.footer}>
