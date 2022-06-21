@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 export default function useWindowDimensions() {
 
-    const [wind, setWindow] = useState(typeof window !== 'undefined');
+    const wind = typeof window !== 'undefined';
 
     function getWindowDimensions() {
         const width = wind ? window.innerWidth : null;
