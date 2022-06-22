@@ -18,13 +18,6 @@ export default function Home() {
         <title>BeatHub</title>
         <meta name="description" content="jonathan's beat website" />
         <link rel="icon" href="/favicon.ico" />
-<<<<<<< HEAD
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway&family=Roboto&display=swap" rel="stylesheet" />
-=======
->>>>>>> 2bf5b43f2b51883dbbb14d98d66aa56452e3741a
       </Head>
       <header className={styles.jumbotron}>
         <nav className={styles.nav}>
@@ -41,7 +34,7 @@ export default function Home() {
         {/* - if the width of the screen is less than or equal to 375px, then change the height of the player to be 80px instead of 380px
             - if the screen is wider than 700px, set the width of the player to 700px */}
         <section className={styles.music}>
-          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" width='100%' height={height <= 375 ? "380" : "80"} frameBorder="0" allowFullScreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" width='100%' height={width <= 375 ? "80" : "380"} frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>
         <section>
           <h1>Blog Post</h1>
