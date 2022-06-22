@@ -34,7 +34,7 @@ export default function Home() {
         {/* - if the width of the screen is less than or equal to 375px, then change the height of the player to be 80px instead of 380px
             - if the screen is wider than 700px, set the width of the player to 700px */}
         <section className={styles.music}>
-          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" width='100%' height={width <= 375 ? "80" : "380"} frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" width='100%' height={width > 375 ? "380" : "80"} frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>
         <section>
           <h1>Blog Post</h1>
