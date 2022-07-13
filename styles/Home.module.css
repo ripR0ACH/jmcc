@@ -2,6 +2,59 @@
 .music {
   text-align: center;
 }
+.nav {
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  color: white;
+}
+.jumbotron {
+  position: relative;
+  height: 100px;
+  background-color: #eaeaea;
+}
+.nav > ul {
+  margin: 0;
+  padding: 5px 5px;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  background-color: black;
+}
+.nav > ul {
+  justify-content: space-between;
+}
+.navImg {
+  position: relative;
+}
+.navImg > span {
+  position: absolute!important;
+  left: -100px;
+  z-index: 5;
+  width: fit-content;
+  height: fit-content;
+}
+/* .nav > ul > li:first-child {
+  display: none;
+} */
+/* .navImg {
+  border: 5px solid black!important;
+  border-radius: 100%;
+}
+.nav {
+  padding: 0 20%;
+}
+.nav > ul {
+  padding: 0 1rem;
+  margin: 25px 0;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  background-color: black;
+}
+*/
 .main > section {
   padding: 3rem 3rem;
   width: 100%;
@@ -19,28 +72,8 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
+  background-color: #eaeaea;
 }
-.nav {
-  margin: 0;
-  padding: 0 20%;
-  position: relative;
-  color: white;
-}
-.nav > ul {
-  padding: 0 1rem;
-  margin: 25px 0;
-  width: 100%;
-  height: 50px;
-  list-style: none;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 25px;
-  background-color: black;
-}
-
 .footer {
   display: flex;
   flex: 1;
