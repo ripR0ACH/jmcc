@@ -1,6 +1,10 @@
-/* probably gonna use Roboto, Lato, or  Raleway */
-.music {
-  text-align: center;
+.nav > ul {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  width: 100%;
+  background-color: black;
 }
 .nav {
   margin: 0;
@@ -13,48 +17,48 @@
   height: 100px;
   background-color: #eaeaea;
 }
-.nav > ul {
-  margin: 0;
-  padding: 5px 5px;
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  width: 100%;
-  background-color: black;
-}
-.nav > ul {
-  justify-content: space-between;
-}
 .navImg {
-  position: relative;
-}
-.navImg > span {
-  position: absolute!important;
-  left: -100px;
-  z-index: 5;
-  width: fit-content;
-  height: fit-content;
-}
-/* .nav > ul > li:first-child {
-  display: none;
-} */
-/* .navImg {
+  width: 100px;
+  height: 100px;
   border: 5px solid black!important;
   border-radius: 100%;
 }
-.nav {
-  padding: 0 20%;
+@media (max-width: 550px) {
+  .nav > ul {
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 125px;
+  }
+  .navImg {
+    position: absolute !important;
+    right: 0px;
+    top: 0px;
+    z-index: 5;
+  }
 }
-.nav > ul {
-  padding: 0 1rem;
-  margin: 25px 0;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 25px;
-  background-color: black;
+@media (min-width: 550px) {
+  .nav {
+    padding: 0 20%;
+  }
+
+  .nav>ul {
+    padding: 0 2px;
+    margin: 30px 0;
+    height: 50px;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    background-color: black;
+  }
 }
-*/
+
+/* probably gonna use Roboto, Lato, or  Raleway */
+.music {
+  text-align: center;
+}
 .main > section {
   padding: 3rem 3rem;
   width: 100%;

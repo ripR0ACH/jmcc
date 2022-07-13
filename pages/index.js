@@ -23,7 +23,7 @@ export default function Home() {
           <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" height={width > 375 ? "380" : "80"} frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>
         <div className={'w-100 p-md-5'}>
-          <iframe src="https://traktrain.com/widget/5089" width="100%" height="800" frameborder="0"></iframe>
+          <iframe src="https://traktrain.com/widget/5089" width="100%" height="800" frameBorder="0"></iframe>
         </div>
         <section>
           <h1>Blog Post</h1>
