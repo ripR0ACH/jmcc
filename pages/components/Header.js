@@ -7,8 +7,8 @@ export default function Header(props) {
     return (
         <header className={styles.jumbotron}>
             <nav className={styles.nav}>
-                <Marquee speed={100} style={{ color: 'black', position: 'absolute', width: '100vw', zIndex: '0' }} play={true} direction={"left"} gradient={false}>
-                    JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS JMCC BEATS
+                <Marquee className={styles.marquee} speed={100} play={true} direction={"right"} gradient={false}>
+                    JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;
                 </Marquee>
                 <ul>
                     <li>{props.screenWidth}</li>

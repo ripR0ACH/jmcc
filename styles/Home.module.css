@@ -5,6 +5,8 @@
   list-style: none;
   width: 100%;
   background-color: black;
+  position:relative;
+  z-index: 1;
 }
 .nav {
   margin: 0;
@@ -22,6 +24,9 @@
   height: 100px;
   border: 5px solid black!important;
   border-radius: 100%;
+}
+.marquee {
+  display: none!important;
 }
 @media (max-width: 550px) {
   .nav > ul {
@@ -52,6 +57,19 @@
     align-items: center;
     border-radius: 25px;
     background-color: black;
+  }
+
+  .marquee {
+    color: black;
+    position: absolute!important;
+    width: 100vw!important;
+    z-index: 0;
+    font-size: 20px;
+    top: 45px!important;
+    line-height: 20px;
+    left: 0px!important;
+    font-weight: bold;
+    user-select: none;
   }
 }
 
