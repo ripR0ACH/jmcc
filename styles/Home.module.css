@@ -26,7 +26,9 @@
   border-radius: 100%;
 }
 .marquee {
-  display: none!important;
+  color: white;
+  position: relative;
+  background-color: black;
 }
 @media (max-width: 550px) {
   .nav > ul {
@@ -70,6 +72,7 @@
     left: 0px!important;
     font-weight: bold;
     user-select: none;
+    background: none;
   }
 }
 
