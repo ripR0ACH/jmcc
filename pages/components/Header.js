@@ -11,13 +11,13 @@ export default function Header(props) {
                     JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;JMCC BEATS&nbsp;&nbsp;&nbsp;&nbsp;
                 </Marquee>
                 <ul>
-                    <li>{props.screenWidth}</li>
-                    <li>Merch</li>
+                    <li>About</li>
+                    <li>Music</li>
                     <div className={styles.navImg}>
                         <Image src='/icon.png' width='100' height='100' />
                     </div>
-                    <li>About</li>
-                    <li>Cart</li>
+                    <li>Beats</li>
+                    <li>Media</li>
                 </ul>
             </nav>
         </header>
