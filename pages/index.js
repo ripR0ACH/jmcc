@@ -20,7 +20,7 @@ export default function Home() {
         {/* - if the width of the screen is less than or equal to 375px, then change the height of the player to be 80px instead of 380px
             - if the screen is wider than 700px, set the width of the player to 700px */}
         <section className={styles.music}>
-          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" height={width > 375 ? "380" : "80"} frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" height={"80"} width={"80"} frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </section>
         <div className={'w-100 p-md-5'}>
           <iframe src="https://traktrain.com/widget/5089" width="100%" height="800" frameBorder="0"></iframe>
@@ -30,11 +30,6 @@ export default function Home() {
         </section>
         <section>
           <h1>Merchandise</h1>
-          <ul>
-            <li>item</li>
-            <li>item</li>
-            <li>item</li>
-          </ul>
         </section>
       </main>
 
