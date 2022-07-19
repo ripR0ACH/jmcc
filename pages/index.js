@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import Header from './components/Header'
 import styles from '../styles/Home.module.css';
+import { SocialIcon } from 'react-social-icons';
 import useWindowDimensions from './hooks/useWindowDimensions';
 
 export default function Home() {
@@ -25,30 +26,47 @@ export default function Home() {
           <p className='text-center pt-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim diam quis enim lobortis scelerisque fermentum dui.</p>
         </section>
         <section>
-          <h1 className='d-flex align-items-center justify-content-start'><span className='pr-3'>Music</span><Image src='/jmccbeatsglasses56.png' width='56' height='56' className='img-responsive' /></h1>
           <div className='row'>
-            <div className='col-6'>
-              <p>
+            <div className='col-6 d-flex flex-column align-items-center justify-content-center'>
+              <h1><span className='pr-3'>Music</span><Image src='/jmccbeatsglasses56.png' width='56' height='56' className='img-responsive' /></h1>
+              <p className='text-center pt-4'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin libero nunc.
               </p>
             </div>
-            <div className='col-6'>
-              <Marquee>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin libero nunc.
+            <div className='col-6 d-flex align-items-center'>
+              <Marquee className=''>
+                MUSIC MUSIC MUSIC MUSIC MUSIC MUSIC&nbsp;
               </Marquee>
             </div>
           </div>
         </section>
-        {/* <section className={styles.music}>
-          <iframe src="https://open.spotify.com/embed/album/7HpeKG3lY2QcDAJ9FOYIvF?utm_source=generator" height={"80"} width={"80"} frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-        </section>
-        <div className={'w-100 p-md-5'}>
-          <iframe src="https://traktrain.com/widget/5089" width="100%" height="800" frameBorder="0"></iframe>
-        </div>
         <section>
-          <h1>Blog Post</h1>
+          <div className='row'>
+            <div className='col-6 d-flex align-items-center justify-content-center'>
+              BEAT SHOP
+              {/* <iframe src="https://traktrain.com/widget/5089" width="100%" height="600" frameBorder="0"></iframe> */}
+            </div>
+            <div className='col-6 d-flex flex-column align-items-center justify-content-center'>
+              <h1><span className='pr-3'>Beats</span><Image src='/jmccbeatseat56.png' width='56' height='56' className='img-responsive' /></h1>
+              <p className='text-center pt-4'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin libero nunc.
+              </p>
+            </div>
+          </div>
         </section>
-        */}
+        <section>
+          <div className='row'>
+            <div className='col-6 d-flex flex-column align-items-center justify-content-center'>
+              <h1><span className='pr-3'>Media</span><Image src='/jmccbeatswhat56.png' width='56' height='56' className='img-responsive' /></h1>
+              <p className='text-center pt-4'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin libero nunc.
+              </p>
+            </div>
+            <div className='col-6 d-flex align-items-center'>
+              <SocialIcon url='https://twitter.com' />
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer style={{ position: 'relative', }} className={styles.footer}>
