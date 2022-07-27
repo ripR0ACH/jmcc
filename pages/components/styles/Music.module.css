@@ -1,0 +1,12 @@
+.album {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0.1rem 0.1rem 0.3rem!important;
+    scale: 1.0;
+}
+.album:hover, .album > span:hover {
+    cursor: pointer;
+    scale: 2.0;
+    box-shadow: 0.2rem 0.2rem 0.3rem !important;
+}
