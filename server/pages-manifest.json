@@ -1,0 +1,14 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/api/hello": "pages/api/hello.js",
+  "/components/About": "pages/components/About.html",
+  "/components/Beats": "pages/components/Beats.html",
+  "/components/Header": "pages/components/Header.html",
+  "/components/Media": "pages/components/Media.html",
+  "/components/Music": "pages/components/Music.html",
+  "/hooks/useWindowDimensions": "pages/hooks/useWindowDimensions.html",
+  "/": "pages/index.html",
+  "/404": "pages/404.html"
+}
