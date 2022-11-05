@@ -5,7 +5,7 @@ export default function useWindowDimensions() {
 
     const wind = typeof window !== 'undefined';
 
-    function getWindowDimensions() {
+    const getWindowDimensions = () => {
         const width = wind ? window.innerWidth : null;
         const height = wind ? window.innerHeight : null;
         return {
@@ -13,13 +13,11 @@ export default function useWindowDimensions() {
             height,
         };
     }
-
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
     useEffect(() => {
         if (wind) {
             function handleResize() {
-                setWindowDimensions(getWindowDimensions());
+                setWindowDimensions(windowDimensions);
             }
 
             window.addEventListener('resize', handleResize);

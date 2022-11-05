@@ -1,12 +1,17 @@
-.album {
+.album, .album > span {
     background-color: black;
-    width: 200px;
-    height: 200px;
-    box-shadow: 0.1rem 0.1rem 0.3rem!important;
+    width: 200px!important;
+    height: 200px!important;
+    transition: box-shadow 0.25s, scale 0.25s, z-index 0.25s;
+    box-shadow: 0.1rem 0.1rem 0.1rem!important;
     scale: 1.0;
 }
 .album:hover, .album > span:hover {
     cursor: pointer;
-    scale: 2.0;
-    box-shadow: 0.2rem 0.2rem 0.3rem !important;
+    scale: 1.01;
+    box-shadow: 0.11rem 0.11rem 0.11rem !important;
+    z-index: 1!important;
+}
+.album:nth-child(n + 2), .album:nth-child(n + 1) > span {
+    margin-left: -150px;
 }
