@@ -4,7 +4,6 @@
 //   reactStrictMode: true,
 // }
 
-// module.exports = nextConfig
 const nextConfig = {
   images: {
     loader: 'akamai',
@@ -13,4 +12,4 @@ const nextConfig = {
   assetPrefix: './',
 };
 
-export default nextConfig;
+module.exports = nextConfig
