@@ -1,17 +1,17 @@
-.album {
+.album, .album > span {
     background-color: black;
-    width: 200px;
-    height: 200px;
-    transition: width 0.2s, height 0.2s, box-shadow 0.2s, margin 0.2s;
+    width: 200px!important;
+    height: 200px!important;
+    transition: box-shadow 0.25s, scale 0.25s, z-index 0.25s;
+    box-shadow: 0.1rem 0.1rem 0.1rem!important;
+    scale: 1.0;
 }
 .album:hover {
     cursor: pointer;
-    margin-bottom: 10px;
-    width: 205px;
-    height: 205px;
-    box-shadow: 0.1rem 0.1rem 0.2rem !important;
+    scale: 1.01;
+    box-shadow: 0.11rem 0.11rem 0.11rem !important;
+    z-index: 1!important;
 }
-.album > img {
-    width: 100%;
-    height: 100%;
+.album:nth-child(n + 2), .album:nth-child(n + 1) > span {
+    margin-left: -150px;
 }
