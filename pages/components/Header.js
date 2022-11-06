@@ -18,7 +18,7 @@ export default function Header(props) {
                     {marquee_text()}
                 </Marquee>
                 <ul>
-                    <li>About</li>
+                    <li>{props.screenWidth}</li>
                     <li>Music</li>
                     <div className={styles.navImg}>
                         <Image src='/icon.png' width='100' height='100' alt='nav icon'/>
