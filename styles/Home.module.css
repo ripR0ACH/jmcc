@@ -34,7 +34,7 @@
   background-color: black;
   z-index: -1;
 }
-@media (max-width: 550px) {
+@media (max-width: 549px) {
   .nav > ul {
     justify-content: space-between;
     align-items: center;
