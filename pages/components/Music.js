@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Marquee from 'react-fast-marquee';
 import styles from './styles/Music.module.css'
 
 export default function Music(props) {
@@ -13,9 +14,21 @@ export default function Music(props) {
                 </div>
                 <div className='col-6 d-flex align-items-center justify-content-center'>
                     {/* this is where I need to add a vinyl stack, or maybe a music carousel */}
+                    <Marquee>
                     <div className={styles.album}>
-                        <Image src='/jmcc_electricity.png' width='200' height='200' />
+                        <img src='/jmcc_electricity.png' width='200' height='200' />
                     </div>
+                    <div className={styles.album}>
+                        <img src='/jmcc_drive.png' width='200' height='200' />
+                    </div>
+                    <div className={styles.album}>
+                        <img src='/jmcc_dis_for_the_homies.png' width='200' height='200' />
+                    </div>
+                    <div className={styles.album}>
+                        <img src='/jmcc_slide.png' width='200' height='200' />
+                    </div>
+
+                    </Marquee>
                     {/* <Image src='/jmcc_drive.png' width='200' height='200' /> */}
                 </div>
             </div>

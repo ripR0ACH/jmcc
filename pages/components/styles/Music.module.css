@@ -2,11 +2,16 @@
     background-color: black;
     width: 200px;
     height: 200px;
-    box-shadow: 0.1rem 0.1rem 0.3rem!important;
-    scale: 1.0;
+    transition: width 0.2s, height 0.2s, box-shadow 0.2s, margin 0.2s;
 }
-.album:hover, .album > span:hover {
+.album:hover {
     cursor: pointer;
-    scale: 2.0;
-    box-shadow: 0.2rem 0.2rem 0.3rem !important;
+    margin-bottom: 10px;
+    width: 205px;
+    height: 205px;
+    box-shadow: 0.1rem 0.1rem 0.2rem !important;
+}
+.album > img {
+    width: 100%;
+    height: 100%;
 }
