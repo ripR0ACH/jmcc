@@ -5,10 +5,10 @@ export default function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(() => {
             const width = typeof window !== 'undefined' ? window.innerWidth : null;
             const height = typeof window !== 'undefined' ? window.innerHeight : null;
-            return {
+            return [
                 width,
                 height,
-            }
+            ]
         }
     )
     useEffect(() => {
@@ -17,10 +17,10 @@ export default function useWindowDimensions() {
                 setWindowDimensions(() => {
                         const width = typeof window !== 'undefined' ? window.innerWidth : null;
                         const height = typeof window !== 'undefined' ? window.innerHeight : null;
-                        return {
+                        return [
                             width,
                             height,
-                        }
+                        ]
                     }
                 );
             }

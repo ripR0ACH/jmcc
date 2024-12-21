@@ -9,7 +9,7 @@ import styles from '../styles/Home.module.css';
 import useWindowDimensions from './hooks/useWindowDimensions';
 
 export default function Home() {
-  var {width, height} = useWindowDimensions();
+  var [width, height] = useWindowDimensions();
   return (
     <>
       <Head>
