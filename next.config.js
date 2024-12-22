@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
-// below is the original code for this file
-// const nextConfig = {
-//   reactStrictMode: true,
-// }
+const nextConfig = {
+    basePath: "/jmcc",
+    output: "export",
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
