@@ -23,7 +23,7 @@ export default function Home() {
         <Music />
         <Beats />
         <Media />
-        "published!"
+        <p>"published!"</p>
       </main>
 
       <footer style={{ position: 'relative', }} className={styles.footer}>
