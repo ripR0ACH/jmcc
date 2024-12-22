@@ -1,4 +1,4 @@
-import styles from './styles/Header.module.css';
+import styles from '../../styles/Header.module.css';
 import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import logo from "../../public/assets/images/icon.png";

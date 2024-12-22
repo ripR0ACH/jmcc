@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Image from 'next/image';
-import styles from './styles/Music.module.css'
+import styles from '../../styles/Music.module.css'
 
 class Music extends Component {
     constructor(props) {

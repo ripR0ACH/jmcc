@@ -5,7 +5,7 @@ import Music from './components/Music';
 import Beats from './components/Beats';
 import Media from './components/Media';
 import Script from 'next/script';
-import styles from './components/styles/Home.module.css';
+import styles from '../styles/Home.module.css';
 import useWindowDimensions from './hooks/useWindowDimensions';
 
 export default function Home() {

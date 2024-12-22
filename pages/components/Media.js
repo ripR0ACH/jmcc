@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { SocialIcon } from 'react-social-icons';
 
 export default function Media(props) {
     return (
@@ -10,9 +9,6 @@ export default function Media(props) {
                     <p className='text-center pt-4'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et ligula ullamcorper malesuada proin libero nunc.
                     </p>
-                </div>
-                <div className='col-6 d-flex align-items-center'>
-                    <SocialIcon url='https://twitter.com' />
                 </div>
             </div>
         </section>
