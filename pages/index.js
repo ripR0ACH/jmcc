@@ -5,7 +5,7 @@ import Music from './components/Music';
 import Beats from './components/Beats';
 import Media from './components/Media';
 import Script from 'next/script';
-import styles from '../styles/Home.module.css';
+import styles from './components/styles/Home.module.css';
 import useWindowDimensions from './hooks/useWindowDimensions';
 
 export default function Home() {
@@ -19,8 +19,6 @@ export default function Home() {
       </Head>
       <Header screenWidth={width}/>
       <main className={styles.main}>
-        {/* - if the width of the screen is less than or equal to 375px, then change the height of the player to be 80px instead of 380px
-            - if the screen is wider than 700px, set the width of the player to 700px */}
         <About />
         <Music />
         <Beats />
